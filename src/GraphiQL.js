@@ -9,7 +9,8 @@ function App({ token }) {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer asdfasdf`,
+        'x-api-key': 'testing123',
       },
       body: JSON.stringify(graphQLParams),
     });

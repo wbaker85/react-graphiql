@@ -5,6 +5,7 @@ import AuthenticationButton from './AuthenticationButton';
 import Profile from './Profile';
 import GraphiQL from './GraphiQL';
 import SchemaPoster from './SchemaPoster';
+import FileUploader from './FileUploader';
 
 function App() {
   const [token, setToken] = useState('');
@@ -31,6 +32,7 @@ function App() {
       </div>
       <GraphiQL token={token} />
       <SchemaPoster token={token} />
+      <FileUploader />
     </div>
   );
 }

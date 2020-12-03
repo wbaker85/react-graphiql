@@ -13,7 +13,7 @@ const SchemaPoster = ({ token }) => {
     event.preventDefault();
 
     const res = await fetch(
-      `${process.env.REACT_APP_SERVER_URL}/admin/schema`,
+      `${process.env.REACT_APP_SCHEMA_ADMIN_URL}/admin/schema`,
       {
         method: 'post',
         headers: {
